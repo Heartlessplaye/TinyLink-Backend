@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS links (
+    code VARCHAR(64) PRIMARY KEY,
+    url TEXT NOT NULL,
+    total_clicks INTEGER NOT NULL DEFAULT 0,
+    last_clicked_at TIMESTAMP WITH TIME ZONE,
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW()
+);
+
+
+CREATE INDEX IF NOT EXISTS idx_links_url ON links (url);
