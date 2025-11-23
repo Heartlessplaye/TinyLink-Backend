@@ -3,7 +3,7 @@ import { config } from "dotenv";
 import helmet from "helmet";
 import cors from "cors";
 import HttpStatusCodes from "./constants/httpCodes.js";
-import AppError from "./utils/errorhandler.js";
+import AppError from "./utils/errorHandler.js";
 import globalErrorHandler from "./utils/globalErrorHandler.js";
 import TinyLinkRouter from "./routes/index.js";
 
