@@ -1,6 +1,6 @@
 import HttpStatusCodes from "../constants/httpCodes.js";
 
-import AppError from "./errorhandler.js";
+import AppError from "./errorHandler.js";
 
 // Error Handler For Development Environment
 const devError = (err, res) => {

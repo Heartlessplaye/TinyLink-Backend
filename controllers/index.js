@@ -6,7 +6,7 @@ import {
   incrementClicks,
   listLinks,
 } from "../models/linkModels.js";
-import AppError from "../utils/errorhandler.js";
+import AppError from "../utils/errorHandler.js";
 import HttpStatusCodes from "../constants/httpCodes.js";
 import catchAsync from "../utils/catchAsync.js";
 

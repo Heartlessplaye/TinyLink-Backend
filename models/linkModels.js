@@ -1,6 +1,6 @@
 import HttpStatusCodes from "../constants/httpCodes.js";
 import { pool } from "../utils/dbConnection.js";
-import AppError from "../utils/errorhandler.js";
+import AppError from "../utils/errorHandler.js";
 
 export async function addLink(shortCode, originalUrl) {
   const q = `
