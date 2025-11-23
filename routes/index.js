@@ -14,7 +14,7 @@ TinyLinkRouter.route("/links/:code")
   .get(getSingleTinyLinkDetails)
   .delete(deleteTinyLink);
 
-TinyLinkRouter.route("/:code").get(redirectToOriginalUrl);
-TinyLinkRouter.route("/:healthz").get(healthCheck);
+TinyLinkRouter.route("/code/:code").get(redirectToOriginalUrl);
+TinyLinkRouter.route("/healthz").get(healthCheck);
 
 export default TinyLinkRouter;
